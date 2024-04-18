@@ -2,10 +2,8 @@ package kr.easw.lesson05;
 
 import java.util.Scanner;
 
-
 /**
  * 해당 클래스는 try-catch문을 사용한 예제입니다.
- *
  *
  * try-catch문이란, try 블럭으로 시작하여 catch 블럭으로 끝나는 구문입니다.
  * try 블럭 안에서 예상치 못한 오류(예외)가 발생한 경우, catch 블럭에 어떠한 예외가 발생했는지를 확인하고, 이에 대한 처리를 할 수 있습니다.
@@ -52,5 +50,7 @@ public class TryCatchExample {
         // 반복문이 종료되었을 때, 총 점수와 평균 점수를 출력합니다.
         System.out.println("총 점수는 " + totalScore + "점 입니다.");
         System.out.println("평균 점수는 " + ((double) totalScore / cycle) + "점 입니다.");
+        // 스캐너를 닫습니다.
+        scanner.close();
     }
 }
